@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>卒業見込み判定システム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>卒業見込み判定システム</h1>
+  <div class="form1">
+    <h2>入学年度を選択してください</h2>
+    <div class="radio-group">
+      <input class="year" type="radio" name="year" value="1" id="2025">
+      <label for="2025">2025(１年生)</label>
+      <input class="year" type="radio" name="year" value="2" id="2024">
+      <label for="2024">2024(２年生)</label>
+      <input class="year" type="radio" name="year" value="3" id="2023">
+      <label for="2023">2023(３年生)</label>
+      <input class="year" type="radio" name="year" value="4" id="2022">
+      <label for="2022">2022～(４年生以上)</label>
+    </div>
+
+  </div>
+
+  <div class="form2">
+    <h2>学群Pを選択してください</h2>
+    <div class="radio-group">
+      <input class="group" type="radio" name="group" value="1" id="1">
+      <label for="1">建築・都市・環境工学群</label>
+      <input class="group" type="radio" name="group" value="2" id="2">
+      <label for="2">情報・生命工学群</label>
+
+      <input class="group" type="radio" name="group" value="3" id="3">
+      <label for="3">土木・建築プログラム</label>
+      <input class="group" type="radio" name="group" value="4" id="4">
+      <label for="4">建築都市プログラム</label>
+      <input class="group" type="radio" name="group" value="5" id="5">
+      <label for="5">工学デザインプログラム</label>
+
+      <input class="group" type="radio" name="group" value="6" id="6">
+      <label for="6">情報システムプログラム</label>
+      <input class="group" type="radio" name="group" value="7" id="7">
+      <label for="7">医工学プログラム</label>
+      <input class="group" type="radio" name="group" value="8" id="8">
+      <label for="8">生物応用プログラム</label>
+    </div>
+
+  </div>
+
+  <div class="form3">
+    <h2>単位を取得済みの科目を<br>すべて選択してください</h2>
+    <div class="checkbox-group">
+      <input class="credit" type="checkbox" value="physics" id="physics">
+      <label class="credit" for="physics">物理学Ⅰ</label>
+      <input class="credit" type="checkbox" value="chemical" id="chemical">
+      <label class="credit" for="chemical">化学Ⅰ</label>
+      <input class="credit" type="checkbox" value="biology" id="biology">
+      <label class="credit" for="biology">生物学Ⅰ</label>
+      <h3>工学デザインプログラムの方は以下も選択してください</h3>
+      <input class="credit" type="checkbox" value="desgin3a" id="desgin3a">
+      <label class="credit" for="desgin3a">工学デザイン実習Ⅲa</label>
+      <input class="credit" type="checkbox" value="desgin3b" id="desgin3b">
+      <label class="credit" for="desgin3b">工学デザイン実習Ⅲb</label>
+      <input class="credit" type="checkbox" value="desgin3c" id="desgin3c">
+      <label class="credit" for="desgin3c">工学デザイン実習Ⅲc</label>
+      <br>
+      <input class="credit" type="checkbox" value="desgin4a" id="desgin4a">
+      <label class="credit" for="desgin4a">工学デザイン実習Ⅳa</label>
+      <input class="credit" type="checkbox" value="desgin4b" id="desgin4b">
+      <label class="credit" for="desgin4b">工学デザイン実習Ⅳb</label>
+      <input class="credit" type="checkbox" value="desgin4c" id="desgin4c">
+      <label class="credit" for="desgin4c">工学デザイン実習Ⅳc</label>
+      <br>
+      <input class="credit" type="checkbox" value="desgin5a" id="desgin5a">
+      <label class="credit" for="desgin5a">工学デザイン実習Ⅴa</label>
+      <input class="credit" type="checkbox" value="desgin5b" id="desgin5b">
+      <label class="credit" for="desgin5b">工学デザイン実習Ⅴb</label>
+      <input class="credit" type="checkbox" value="desgin5c" id="desgin5c">
+      <label class="credit" for="desgin5c">工学デザイン実習Ⅴc</label>
+    </div>
+  </div>
+
+  <div class="form">
+    <p>スマホでUNIPAにアクセスし成績照会の単位取得状況の中の表をコピーしてください。</p>
+    <textarea placeholder="(例)
+科目分類    修得済    履修中    合計
+教養基礎
+38    4    42
+人文社会
+12    0    12
+・
+・
+・
+合計
+74    28    102
+" rows="15"></textarea>
+  </div>
+
+  <button>判定を開始する</button>
+
+  <br>
+  <section>
+    <h2>結果</h2>
+  </section>
+  <br>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
