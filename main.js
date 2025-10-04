@@ -57,15 +57,15 @@
     if (creditList[0] === '科目分類    修得済    履修中    合計' && creditList.length === 53) {
       for (let i = 1; i < 53; i++) {
         if (i % 2 === 0) {
-          credits.push(creditList[i].split('    '));
+          credits.push(creditList[i].trim().split(/\s+/));
         } else {
           subject.push(creditList[i]);
         }
       }
 
       //テスト
-      // console.log(subject);
-      // console.log(credits);
+      console.log(subject);
+      console.log(credits);
 
       //学年に応じた条件の変更
       let english;
@@ -374,7 +374,7 @@
       }
 
       //テスト
-      // console.log(condition);
+      console.log(subject.length);
 
       //残留単位
       // let rest = 0;const rest = document.createElement('p');
