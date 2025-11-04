@@ -15,7 +15,7 @@
       }
     });
     if (year != 1 && year != 2 && year != 3 && year != 4) {
-      alert('エラーが発生しました。自動でリロードします。');
+      alert('1:エラーが発生しました。自動でリロードします。');
       setTimeout(function () {
         window.location.reload();
       });
@@ -27,7 +27,7 @@
       }
     });
     if (group != 1 && group != 2 && group != 3 && group != 4 && group != 5 && group != 6 && group != 7 && group != 8) {
-      alert('エラーが発生しました。自動でリロードします。');
+      alert('2:エラーが発生しました。自動でリロードします。');
       setTimeout(function () {
         window.location.reload();
       });
@@ -440,7 +440,7 @@
       result.classList.add('lastResult');
       document.querySelector('section').appendChild(result);
     } else {
-      alert('エラーが発生しました。自動でリロードします。');
+      alert('3:エラーが発生しました。自動でリロードします。');
       setTimeout(function () {
         window.location.reload();
       });
