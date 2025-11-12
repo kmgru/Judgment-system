@@ -57,7 +57,7 @@
     const requiredWords = ['科目分類', '修得済', '履修中', '合計'];
 
     const allExist = requiredWords.every(word => creditList[0].includes(word));
-    if (allExist && creditList.length === 53) {
+    if (allExist && creditList.length >= 53) {
       for (let i = 1; i < 53; i++) {
         if (i % 2 === 0) {
           credits.push(creditList[i].trim().split(/\s+/));
